@@ -18,6 +18,56 @@
     z-index: 99;
 }
 
+/* Style for the WhatsApp button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 120px; /* 100px for Back to Top button + 20px gap */
+    z-index: 999;
+    background-color: #25D366;
+    padding: 12px;
+    border-radius: 50% !important; /* 50% border radius */
+    color: white;
+    font-size: 30px;
+}
+
+.whatsapp-btn i {
+    margin: 0;
+}
+/* Style for the WhatsApp button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 120px; /* 100px for Back to Top button + 20px gap */
+    z-index: 999;
+    background-color: #25D366;
+    padding: 12px;
+    border-radius: 50%; /* 50% border radius */
+    color: white;
+    font-size: 30px;
+    animation: pulseAnimation 1.5s infinite;
+}
+
+/* Pulsating animation */
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+        background-color: #25D366;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #4CAF50; /* A slightly darker shade */
+    }
+    100% {
+        transform: scale(1);
+        background-color: #25D366;
+    }
+}
+
+/* Stop animation on hover */
+.whatsapp-btn:hover {
+    animation: none;
+}
 
 /*** Spinner ***/
 #spinner {
